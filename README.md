@@ -20,8 +20,5 @@ Website for finding the shortest airline path between two cities using a* algori
 3.choose a start and end point then run
 
 
-![](https://github.com/Modar-Mulla/Pathfinder/blob/main/20220828223120_Trim%20(1).gif)
-
-
 https://user-images.githubusercontent.com/98617055/187096386-adcbec1d-e436-48cc-aaf2-c0e3d1c22ec1.mp4
 
