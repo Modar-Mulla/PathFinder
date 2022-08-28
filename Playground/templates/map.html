@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% load static %}
+    <link rel="stylesheet" href="{% static 'Playground/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Playground/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'Playground/css/bootstrap.min.css' %}">
+    <title>Pathfinder</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container justify-content-center">
+        <a href="" class="navbar-brand text-uppercase">Pathfinder <i class="fas fa-map fg-primary"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Map -->
+    <main>
+     {{map | safe}}
+    </main>
+
+  </body>
+</html>

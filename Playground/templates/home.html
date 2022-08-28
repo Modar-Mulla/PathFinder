@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% load static %}
+    <link rel="stylesheet" href="{% static 'Playground/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Playground/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'Playground/css/bootstrap.min.css' %}">
+    <title>Pathfinder</title>
+  </head>
+  <body>
+    
+    <div class="alert alert-dark " role="alert">
+
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container justify-content-center">
+        <a href="{% url 'home' %}" class="navbar-brand text-uppercase">Pathfinder <i class="fas fa-map fg-primary"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <main class="pb-5">
+      <div class="selections container d-flex justify-content-between">
+        <div class="country w-50">
+          <h2>Select Country</h2>
+          <select name="Country" id="country"  class="form-select form-select-md w-25">
+            <option value=""></option>
+            </select>
+        </div>
+        <div class="edge w-50">
+          <h2>Select Route</h2>
+          <div class="from-to justify-content-between gap-3 d-flex">
+            <div class="from d-flex gap-3 w-50">
+              <h5 >From</h5>
+              <select name="from" id="from" class="form-select">
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="to d-flex gap-3 w-50">
+              <h5>To</h5>
+              <select name="to" id="to" class="form-select" >
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+          <div class="add-edge d-flex justify-content-center mt-3">
+            <button class="btn btn-dark">Add Route</button>
+          </div>
+        </div>
+      </div>
+      </select>
+      <div class="graph mt-5 container-fluid row justify-content-center gap-5">
+        <div class="route d-none justify-content-between col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+          <div class="node rounded-circle bg-indigo d-flex justify-content-center align-items-center text-center text-break "></div>
+          <div class="node rounded-circle bg-indigo d-flex justify-content-center align-items-center text-center text-break"></div>
+        </div>
+      </div>
+      <div class="calc-path d-none flex-column align-items-center justify-content-center mt-5">
+        <div class="start-end w-25 d-flex justify-content-between gap-5 mb-5">
+          <div class="start-point">
+            <h5>Start Point</h5>            
+            <select name="start" id="start" class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="end-point">
+            <h5>End Point</h5>            
+            <select name="end" id="end" class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+        <form action="http://127.0.0.1:8000/" method="post" id="formsub">
+          <input type="hidden" name="graph" value="HI" id="hidden">
+          <button class="btn btn-dark">Find Path</button>
+        </form>
+          
+        </form>
+      </div>
+    </main>
+    {% load static %}
+    <script src="{% static 'Playground/js/get.js' %}">
+
+    </script>
+    
+  </body>
+</html>
