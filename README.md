@@ -13,4 +13,4 @@ Website for finding the shortest airline path between two cities using a* algori
 
 # How it works
 
-![](https://github.com/Modar-Mulla/Pathfinder/blob/main/ezgif.com-gif-maker.gif)
+![](ezgif.com-gif-maker.gif)
