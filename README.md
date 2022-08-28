@@ -14,7 +14,10 @@ Website for finding the shortest airline path between two cities using a* algori
 # How it works
 
 1.Select a country
+
 2.build your own map by adding routes
+
 3.choose a start and end point then run
 
-![]([20220828223120_Trim (1).gif](https://github.com/Modar-Mulla/Pathfinder/blob/main/20220828223120_Trim%20(1).gif))
+
+![](20220828223120_Trim (1).gif](https://github.com/Modar-Mulla/Pathfinder/blob/main/20220828223120_Trim%20(1).gif)
