@@ -2,7 +2,7 @@
 Website for finding the shortest airline path between two cities using a* algorithm
 
 
-# How it Works
+# How to install
 
 1.download files and open pathfinder folder in the IDE
 
